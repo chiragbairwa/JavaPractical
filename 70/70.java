@@ -1,16 +1,10 @@
 import java.applet.Applet;
-import java.awt.Graphics;
-import java.awt.Button;
+import java.awt.*;
 
-public class myapplet extends Applet
-{
-	Button b1=new Button("Click");
-	public void init()
-	{
-		add(b1);
-	}
-	public void paint(Graphics g)
-	{
+public class j70 extends Applet{
+	Button btn1=new Button("Click");
+	public void init(){
+		add(btn1);
 	}
 }
-/*<applet code="myapplet class" width="300" height="300"></applet>*/
+/*<applet code="j70.class" width="300" height="300"></applet>*/

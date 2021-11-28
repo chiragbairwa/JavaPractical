@@ -6,8 +6,8 @@ class j81 implements Runnable{
 	}  
 	  
 	public static void main(String []args){  
-		j81 obj=new j81();  
-		Thread t =new Thread(obj);
+		j81 obj = new j81();  
+		Thread t = new Thread(obj);
 		t.start();  
 	 }  
 }  

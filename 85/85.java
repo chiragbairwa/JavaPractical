@@ -22,6 +22,7 @@ class j85 extends Thread{
          
         t2.suspend();   
          
-        t3.start();  
+        t3.start();
+        t2.resume(); 
     }    
 }  

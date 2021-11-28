@@ -1,22 +1,16 @@
 import java.applet.Applet;
-import java.awt.Graphics;
-import java.awt.Button;
-import java.awt.BorderLayout;
+import java.awt.*;
 
-public class borderlayout extends Applet
-{
-	Button b1=new Button("Click 1");
-	Button b2=new Button("Click 2");
+public class j71 extends Applet{
+
+	Button btn1 = new Button("Click 1");
+	Button btn2 = new Button("Click 2");
 	BorderLayout b=new BorderLayout();
-	public void init()
-	{
-	this.setLayout(b);
-	add(b1,BorderLayout.NORTH);
-	add(b2,BorderLayout.SOUTH);
-	}
-	public void paint(Graphics g)
-	{
 	
+	public void init(){
+		this.setLayout(b);
+		add(btn1,BorderLayout.NORTH);
+		add(btn2,BorderLayout.SOUTH);
 	}
 }
-/*<applet code="borderlayout.class" width="300" height="300"></applet>*/
+/*<applet code="j71.class" width="300" height="300"></applet>*/
