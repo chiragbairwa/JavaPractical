@@ -1,7 +1,6 @@
-class StBuffer_Functions {
+class j38 {
     public static void main(String[] args) {
 
-        ;
         StringBuffer str = new StringBuffer("Hell");
         System.out.println(str);
         System.out.println("The length of StringBuffer is " + str.length());

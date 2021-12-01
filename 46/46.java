@@ -1,10 +1,12 @@
-interface a{
-    //public,static and final (By Default)
-    int x=10;
+
+interface var{
+	public static final int i = 10;
 }
-class temp implements a{
-    public static void main(String[] args) {
-        //a.x=89;//Error
-        System.out.println(a.x);
-    }
+
+class j46 implements var{
+	public static void main(String[] args) {
+		
+		System.out.println("var of Interface = "+ i);		
+		
+	}
 }

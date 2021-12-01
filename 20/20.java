@@ -1,21 +1,22 @@
-class A{
-    public int value;
+class j20{
+    String str;
 
-    A(){}
+    j20(){}
 
-    A(A temp){
-        System.out.println("Copy Constructor is called");
-        value=temp.value;
+    j20(j20 temp){
+        System.out.println("Copy Constructor is called : ");
+        str = temp.str;
     }
-    public void display(){
-        System.out.println("Value="+value);
+    public void disp(){
+        System.out.println("Result = " + str);
     }  
     
-    public static void main(String[] args) {
-        A obj1=new A();
-        obj1.value=10;
-        A obj2=new A(obj1);
-        obj2.display();
+    public static void main(String []args) {
+        j20 obj1=new j20();
+        obj1.str = "First obj";
+
+        j20 obj2=new j20(obj1);
+        obj2.disp();
     }
 }
 

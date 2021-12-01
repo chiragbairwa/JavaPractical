@@ -1,8 +1,9 @@
 class a{
-    public int a;
+    protected int a;
 }
 class b extends a{
-    public int b;
+    protected int b;
+    
     b(int a,int b){
         this.a=a;
         this.b=b;
@@ -14,7 +15,7 @@ class b extends a{
 }
 
 class c extends a{
-    public int c;
+    protected int c;
     c(int a,int c){
         this.a=a;
         this.c=c;
@@ -25,10 +26,11 @@ class c extends a{
     }
 }
 
-class d{
+class j26{
     public static void main(String[] args) {
         b obj=new b(10,10);
         obj.sum();
+        
         c obj1=new c(20,20);
         obj1.sum();
     }

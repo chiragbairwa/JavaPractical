@@ -2,14 +2,14 @@
 //Check 
 
 
-public class WaitNotifyTest {
+class j86 {
    private static final long SLEEP_INTERVAL = 3000;
    private boolean running = true;
    private Thread thread;
+
    public void start() {
       print("Inside start() method");
       thread = new Thread(new Runnable() {
-         @Override
          public void run() {
             print("Inside run() method");
             try {
@@ -17,9 +17,9 @@ public class WaitNotifyTest {
             } catch(InterruptedException e) {
                Thread.currentThread().interrupt();
             }
-            synchronized(WaitNotifyTest.this) {
+            synchronized(j86.this) {
                running = false;
-               WaitNotifyTest.this.notify();
+               j86.this.notify();
             }
          }
       });
@@ -39,7 +39,7 @@ public class WaitNotifyTest {
       System.out.println(s);
    }
    public static void main(String[] args) throws InterruptedException {
-      WaitNotifyTest test = new WaitNotifyTest();
+      j86 test = new j86();
       test.start();
       test.join();
    }

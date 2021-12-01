@@ -5,7 +5,7 @@ class A{
     }
 }
 
-class B{
+class j33{
     public static void main(String[] args) {
         A obj=new A();
         obj.a=5;

@@ -12,7 +12,7 @@ class j13 {
             input[i] = s.nextLine();
         }
 
-        System.out.print("\n");
+        System.out.println();
 
         for (int i = 0; i < 3; i++) {
             System.out.println("Your " + rel[i] + " name is " + input[i]);

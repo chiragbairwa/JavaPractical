@@ -1,21 +1,16 @@
-class sta
-{
-static int x=15; //static data member
-static String y="Static member"; //static data member
+class j15{
+    static String str = "Static Data Member"; 
 
-void display() //non-static function
-{
-msg();
-}
-static void msg() //static function
-{
-System.out.println("Static Function Called by non-static function");
-}
-public static void main(String stat[]) //main class
-{
-new sta().display();
-System.out.println(y);
-System.out.println(x);
-}
+    void disp(){
+        show();
+    }
+    static void show(){
+        System.out.print("Static function called by non-static function : ");
+    }
+    public static void main(String []arg){
+        j15 obj = new j15();
+        obj.disp();
 
+        System.out.println(str);
+    }
 }

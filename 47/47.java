@@ -5,15 +5,15 @@ interface second extends first{
     void display2();
 }
 
-class a implements second{
+class j47 implements second{
     public void display1(){
-        System.out.println("Interface first");
+        System.out.println("Interface first :");
     }
     public void display2(){
-        System.out.println("Interface Second");
+        System.out.println("Interface Second :");
     }
     public static void main(String[] args) {
-        a obj=new a();
+        j47 obj=new j47();
         obj.display1();
         obj.display2();
     }

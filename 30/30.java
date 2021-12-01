@@ -16,15 +16,16 @@ class C extends B{
     }
 }
 
-class test{
+class j30{
     public static void main(String[] args) {
-        A obj=new A();
+        A obj1=new A();
         B obj2=new B();
         C obj3=new C();
-        obj.display();
-        obj=obj2;
-        obj.display();
-        obj=obj3;
-        obj.display();
+        
+        obj1.display();
+        obj1 = obj2;
+        obj1.display();
+        obj1 = obj3;
+        obj1.display();
     }
 }

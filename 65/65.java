@@ -1,43 +1,31 @@
-class MyException extends Throwable
-{
-	public String getMessage()
-	{
-		return "Negative number";
-	}
-}
+import java.util.Scanner;
 
-class input
-{
-	public static void main(String args[])
-	{
-		int x=0;
-		try
-		{
-		x=Integer.parseInt(args[0]);
-		display(x);
-		}
-		catch(ArrayIndexOutOfBoundsException e)
-		{
-			System.out.println(e.getMessage());
-		}
-		catch(NumberFormatException e)
-		{
-			System.out.println(e.getMessage());
-		}
-		catch(MyException e)
-		{
-			System.out.println(e.getMessage());
+class MyExp extends Exception{
+    public MyExp(String s){
+        // Call constructor of parent Exception
+        super(s);
+    }
+}
+ 
+class j65{
+   void ageCheck(int age) throws MyExp{
+		if(age<1){
+			throw new MyExp("Age Invalid");
 		}
 	}
-	static void display(int x) throws MyException
-	{
-		if(x<0)
-		{
-			throw new MyException();
-		}
-		else 
-		{
-			System.out.println(x);
-		}
-	}
+   
+    public static void main(String args[]){
+    	j65 obj = new j65();
+        try{
+			System.out.print("Enter the Age : ");
+			Scanner sc = new Scanner(System.in);
+			int age = sc.nextInt(); 
+            obj.ageCheck(age);
+			System.out.println("Age Valid");
+        }
+        catch (MyExp ex){
+            System.out.println("Caught the exception :");
+            System.out.println(ex.getMessage());
+        }
+    }
 }

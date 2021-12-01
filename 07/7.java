@@ -1,13 +1,16 @@
 import java.util.Scanner;
-class one
-{
-public static void main(String one[])
-{
-Scanner scan=new Scanner(System.in);
 
-System.out.println("Enter number ");
-int x=scan.nextInt();
- x=1;
-System.out.println(x);
-}
+class j7{
+    public static void main(String []str){
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Enter number ");
+        int x=sc.nextInt();
+        if(x!=0)
+            System.out.println(x/x);
+        else{
+            x = 1;
+            System.out.println(x);
+        }
+    }
 }

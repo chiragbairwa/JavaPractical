@@ -1,12 +1,12 @@
-package temp;
+package p1;
 
-class J1 {
+class a {
     protected String str = "Hi from other class";
 }
 
-class J2 extends J1 {
+class j43 extends a {
     public static void main(String[] args) {
-        J2 obj = new J2();
+        a obj = new a();
         System.out.println(obj.str);
     }
 }

@@ -1,17 +1,17 @@
-class C1{
-    C1(){
+class a{
+    a(){
         System.out.println("Super Class Constructor");
     }
 }
-class C2 extends C1{
-    C2(){
+class b extends a{
+    b(){
         super();
         System.out.println("Sub Class Constructor");
     }
 }
 
-class C3{
+class j28{
     public static void main(String[] args) {
-        C2 obj=new C2();
+        b obj=new b();
     }
 }

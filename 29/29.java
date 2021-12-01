@@ -5,13 +5,12 @@ class a{
 }
 
 class b extends a{
-    //Overriding display()
     void display(){
         System.out.println("Class B");
     }
 }
 
-class c{
+class j29{
     public static void main(String[] args) {
         b obj=new b();
         obj.display();

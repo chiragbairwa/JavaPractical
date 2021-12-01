@@ -16,7 +16,7 @@ class b extends a{
     }
 }
 
-class c{
+class j27{
     public static void main(String[] args) {
         b obj=new b(1,2);
         obj.display();

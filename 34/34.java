@@ -5,7 +5,7 @@ class A{
 
 }
 
-class B extends A{
+class j34 extends A{
      void display(){
          System.out.println("Overridding display function");
      }

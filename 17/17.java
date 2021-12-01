@@ -1,12 +1,10 @@
-class robj
-{
+class j17{
+    void disp1() {
+        System.out.println("Calling by Reference object :");
+    }
 
-public static void main(String obj[])
-{
-robj a1=new robj();//named object
-robj a2=new robj();//named object
-System.out.println("Reference of object 1 = "+a1);
-System.out.println("Reference of object 2 = "+a2);
-}
-
+    public static void main(String []arg){
+        j17 obj = new j17();
+        obj.disp1();
+    }
 }

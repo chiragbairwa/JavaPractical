@@ -1,17 +1,17 @@
-class Temp {
-    private String p = "Parminder";
-    protected String pro = "Parminder";
-    public String pub = "Parminder";
-    String def = "Parminder";
+class j14 {
+    private String a = "private";
+    protected String b = "protected";
+    public String c = "public";
+    String d = "Default";
 
-    Temp() {
-        System.out.println("Private variable p= "+p);
-        System.out.println("Protected variable pro= "+pro);
-        System.out.println("Public variable pub= "+pub);
-        System.out.println("Default variable def= "+def);
+    j14() {
+        System.out.println("Private Data Member : " + a);
+        System.out.println("Protected Data Member : " + b);
+        System.out.println("Public Data Member : " + c);
+        System.out.println("Default Data Member : " + d);
     }
 
     public static void main(String[] args) {
-        Temp obj = new Temp();
+        j14 obj = new j14();
     }
 }

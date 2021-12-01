@@ -13,7 +13,7 @@ class C implements A{
     }
 }
 
-class D{
+class j48{
     public static void main(String[] args) {
         A obj;
         obj=new B();

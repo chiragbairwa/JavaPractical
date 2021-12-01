@@ -4,9 +4,9 @@ abstract class A{
     }
 }
 
-class B extends A{
+class j32 extends A{
     public static void main(String[] args) {
-        B obj=new B();
+        j32 obj=new j32();
         obj.display();
     }
 }

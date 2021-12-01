@@ -1,14 +1,14 @@
 class a{
-    public int a;
+    protected int a;
 }
 
 class b extends a{
-    public int b;
+    protected int b;
 
 }
 
 class c extends b{
-    public int c;
+    int c;
     c(int a,int b,int c){
         this.a=a;
         this.b=b;
@@ -20,8 +20,8 @@ class c extends b{
     }
 }
 
-class d{
-    public static void main(String[] args) {
+class j25{
+    public static void main(String []args) {
         c obj=new c(1,2,3);
         obj.display();
     }
